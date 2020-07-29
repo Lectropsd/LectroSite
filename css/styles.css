@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@keyframes lectro {
+    0% {
+        opacity: 0%;
+        top: 40%;
+    }
+    35% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        top: 25%;
+    }
+}
+
+@keyframes desc {
+    0% {
+        opacity: 0%;
+        top: 35%;
+    }
+    45% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        top: 44%;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    35% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes social {
+    0% {
+        opacity: 0%;
+        top: 90%;
+    }
+    20% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        top: 80%;
+    }
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(-90deg, #10101c, #232336)
+}
+
+h1 {
+    font-size: 150px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.212) 0px 7px 10px;
+    animation: lectro 1.3s;
+}
+
+
+p {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    animation: desc 2s;
+}
+
+button {
+    cursor: pointer;
+    font-family: sans-serif;
+    outline: none;
+    color: white;
+    background: none;
+    border: solid white 1.3px;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 10px 25px;
+    animation: fade 2s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.butt {
+    list-style: none;
+    align-items: center;
+    position: absolute;
+    top: 57%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    animation: social 1s;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .2s;
+}
+.social-menu ul li .fa:hover {
+    opacity: 50%;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+}
+
+footer {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 25%;
+}
