@@ -10,7 +10,7 @@
     }
     100% {
         opacity: 100%;
-        top: 25%;
+        top: 20%;
     }
 }
 
@@ -50,20 +50,21 @@
     }
     100% {
         opacity: 100%;
-        top: 90%;
+        top: 80%;
     }
 }
 
 body {
+    text-align: center;
     overflow: hidden;
     height: 100vh;
     background: linear-gradient(-90deg, #10101c, #232336)
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 130px;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -85,34 +86,6 @@ p {
     color: white;
     font-family: 'Rubik', sans-serif;
     animation: desc 2s;
-}
-
-.note {
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-size: 30px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    animation: fade 2s;
-}
-
-h2 {
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-size: 30px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    animation: fade 2s;
 }
 
 button {
@@ -138,14 +111,14 @@ button:hover {
     list-style: none;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 49%;
     transform: translate(-50%, -50%);
 }
 
 .social-menu ul {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
@@ -180,9 +153,40 @@ button:hover {
 
 footer {
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     opacity: 25%;
+}
+
+form {
+    color: white;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50px -50px);
+    margin-top: 50px;
+    transition: all 1s ease-in-out;
+}
+
+.form-control {
+    color: white;
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+input {
+    color: white;
+    height: 45px;
+}
+
+form .submit {
+    background: none;
+    color: white;
+    cursor: pointer;
 }
